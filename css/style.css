@@ -1741,10 +1741,14 @@ footer .footer__text {
   }
 
   .webform {
+	animation-duration: 1.5s;
+	animation-name: Animation;
     height: 1100px;
   }
 
   .webform__main {
+	  animation-duration: 1.5s;
+	  animation-name: Animation;
     z-index: 20;
     flex-direction: column;
     justify-content: center;
@@ -1752,6 +1756,8 @@ footer .footer__text {
   }
 
   .webform__main .webform__info {
+	  animation-duration: 1.5s;
+	  animation-name: Animation;
     width: 100%;
     margin: 60px;
   }
