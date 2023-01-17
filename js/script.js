@@ -41,3 +41,69 @@ $(document).ready(function () {
         nextArrow: '<span class="slick-next">></span>',
     });
 
+   // ПАРТНЕРЫ
+
+    $('.partners__slider-1').slick({
+        arrows: false,
+        dots: false,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        easing: 'ease',
+        autoplay: true,
+        pauseOnFocus: true,
+        autoplaySpeed: 2500,
+        speed: 1500,
+        responsive: [{
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                centerMode: false,
+                variableWidth: true,
+            }
+        }],
+    });
+
+    $('.partners__slider-2').slick({
+        arrows: false,
+        dots: false,
+        slidesToShow: 6,
+        slidesToScroll: 2,
+        easing: 'ease',
+        autoplay: true,
+        pauseOnFocus: true,
+        autoplaySpeed: 2700,
+        speed: 2000,
+        responsive: [{
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                centerMode: true,
+                focusOnSelect: true,
+                variableWidth: true
+            }
+        }],
+    });
+
+    // Burger JQ
+
+    $('.header__burger').click(function (event) {
+        $('.header__menu').toggleClass('show');
+    });
+});
+
+// FETCH
+
+const formElem = document.querySelector("#form");
+
+formElem.onsubmit = async (e) => {
+    e.preventDefault();
+
+    let response = await fetch('https://formcarry.com/s/i9EtQjA3zV1', {
+        method: 'POST',
+        body: new FormData(formElem)
+    });
+    formElem.reset();
+    alert("Данные отправлены!");
+}
