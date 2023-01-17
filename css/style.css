@@ -1277,6 +1277,8 @@ li {
 
 
 .webform {
+  animation-duration: 1.5s;
+	animation-name: Animation;
   margin-top: 160px;
   background:
     linear-gradient(261.2deg, rgba(255, 255, 255, 0.276) -114.85%,
