@@ -72,7 +72,7 @@ class LikeButton extends React.Component {
         <input onClick={() =>this.setState({ liked: true })}
           className = "plans__btn"
           type = "button"
-          value = "ОСТАВИТЬ ЗАЯВКУ!" />
+          value = "ОСТАВИТЬ ЗАЯВКУ!!!" />
       </div>
     );
   }
